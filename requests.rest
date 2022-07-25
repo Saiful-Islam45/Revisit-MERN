@@ -1,0 +1,10 @@
+GET http://localhost:5000/api/todos
+
+###
+POST http://localhost:5000/api/todo/new
+Content-Type: application/json
+
+{
+    "title": "this is first todo",
+    "completed": true
+}
