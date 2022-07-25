@@ -8,3 +8,10 @@ Content-Type: application/json
     "title": "this is first todo",
     "completed": true
 }
+
+
+###
+DELETE http://localhost:5000/api/todo/delete/62de0cb469c6d84bd25537b0
+
+###
+GET http://localhost:5000/api/todo/toggleStatus/62ded49f5116fd623017eef7
