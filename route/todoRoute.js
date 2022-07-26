@@ -7,6 +7,6 @@ router.get('/todos', getTodos)
 router.post("/todo/new", createTodo)
 router.delete("/todo/delete/:id", deleteTodo)
 router.get("/todo/toggleStatus/:id", toggleTodo)
-router.get("/todo/edit/:id", editTodo)
+router.post("/todo/edit/:id", editTodo)
 
 module.exports= router

@@ -17,10 +17,10 @@ DELETE http://localhost:5000/api/todo/delete/62ded49b5116fd623017eef3
 GET http://localhost:5000/api/todo/toggleStatus/62ded49f5116fd623017eef7
 
 ###
-GET http://localhost:5000/api/todo/edit/62ded49b5116fd623017eef3
+POST http://localhost:5000/api/todo/edit/62e0399d5840e27064e38054
 Content-Type: application/json
 
 {
-    "title": "this is first todwwwwo",
-    "completed": true
+    "title": "this is first todwwdfdfdwwo",
+    "completed": false
 }
