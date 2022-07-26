@@ -25,7 +25,15 @@ const toggleTodo = async(req, res) => {
   res.json(todo)
 }
 
+const editTodo = async(req, res) => {
+  const todo = await Todo.findById(req.params.id) 
+  todo.title= req.params.title
+  todo.save()
+  res.json(todo)
+}
+
 exports.getTodos = getTodos
 exports.createTodo = createTodo
 exports.deleteTodo = deleteTodo
 exports.toggleTodo = toggleTodo
+exports.editTodo = editTodo
