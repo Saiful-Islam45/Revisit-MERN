@@ -27,7 +27,7 @@ const toggleTodo = async(req, res) => {
 
 const editTodo = async(req, res) => {
   const todo = await Todo.findByIdAndUpdate(req.params.id, req.body) 
-  // todo.save()
+  todo.save()
   res.json(todo)
 }
 
